@@ -27,9 +27,12 @@ public class BoundaryEmmenager {
 					break;
 
 				case 2:
-					//TODO a completer
+					System.out.println("bienvenue villageois " + nomVisiteur);
+					System.out.println("Quelle est votre force ?");
+					int force = Clavier.entrerEntier(question.toString());
+					controlEmmenager.ajouterGaulois(nomVisiteur,force);
 					break;
-
+					
 				default:
 					System.out
 							.println("Vous devez choisir le chiffre 1 ou 2 !");
@@ -41,5 +44,6 @@ public class BoundaryEmmenager {
 
 	private void emmenagerDruide(String nomVisiteur) {
 		//TODO a completer
+		
 	}
 }
